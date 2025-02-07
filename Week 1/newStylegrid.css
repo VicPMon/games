@@ -1,0 +1,97 @@
+body{
+    background-color: rgb(255, 255, 255);
+
+}
+.container1{
+    display: grid;
+    grid-template-areas:
+        "header1 header1"
+        "image1 text1" 
+        "header2 header2"
+        "image2 text2"
+        "header3 header3"
+        "image3 text3";
+    grid-template-columns: 1fr,1fr;
+    gap: 5px;
+    padding: 50px;
+}
+.container1 > div {
+    padding: 10px;
+    background: linear-gradient(135deg, rgba(30,87,153,1) 0%,rgba(41,137,216,0.57) 60%,rgba(32,124,202,0.56) 61%,rgba(91,163,221,0.3) 92%,rgba(117,180,230,1) 96%,rgba(125,185,232,1) 100%);
+}
+.container1 > div.header1 {
+  grid-area: header1;
+  text-align: center;
+}
+.container1 > div.image1 {
+  grid-area: image1;
+  vertical-align: middle;
+}
+.container1 > div.text1 {
+  grid-area: text1;
+  align-content: center;
+}
+.container1 > div.header2 {
+    grid-area: header2;
+    text-align: center;
+}
+.container1 > div.image2 {
+    grid-area: text2;
+}
+.container1 > div.text2 {
+    grid-area: image2;
+    align-content: center;
+}
+.container1 > div.header3 {
+    grid-area: header3;
+    text-align: center;
+}
+  .container1 > div.image3 {
+    grid-area: image3;
+    vertical-align: middle;
+}
+  .container1 > div.text3 {
+    grid-area: text3;
+    align-content: center;
+}
+
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 50px;
+}
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+}
+ol{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
+    display: flex;
+    justify-content: space-around;
+}
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:30px;
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
+img{
+    width:400px;
+    height:200px;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+a:hover{
+    background: #b3b3b3;
+    color: #2989d8;
+    
+}
